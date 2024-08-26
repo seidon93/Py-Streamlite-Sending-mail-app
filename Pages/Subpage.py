@@ -13,7 +13,7 @@ c.header("Our team")
 
 col1, col2, col3 = st.columns(3)
 
-csv =  pd.read_csv("2/data.csv")
+csv =  pd.read_csv("../2/data.csv")
 
 
 with col1:

@@ -13,14 +13,14 @@ c.header("Our team")
 
 col1, col2, col3 = st.columns(3)
 
-csv =  pd.read_csv("../2/data.csv")
+csv =  pd.read_csv("2/data.csv")
 
 
 with col1:
     for index, row in csv[:4].iterrows():
         st.subheader(f'{row["first name"].title()} {row["last name"].title()}')
         st.write(row["role"])
-        st.image("2/images/" + row["image"])
+        st.image("2/Images/" + row["image"])
 
 with col2:
     for index, row in csv[4:8].iterrows():
